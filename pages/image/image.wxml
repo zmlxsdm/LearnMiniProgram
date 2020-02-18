@@ -1,0 +1,32 @@
+<!--pages/image/image.wxml-->
+<!-- <text>pages/image/image.wxml</text> -->
+<!-- 1、image的基恩使用 -->
+<!--
+重点：
+    1、image组件可以写成单标签，也可以写成双标签
+    2、image组件默认有自己的大小：320*240，在所有品牌手机都是同一个大小
+    3、image组件时是一个行内块级元素（inline-block）
+ -->
+ <!-- <image/>
+ <text>123</text> -->
+
+ <!-- 2、src：本地路径（相对路径/绝对路径）/远程地址 -->
+ <!-- <image src="../../assets/text/14.jpg" /> -->
+ <!-- <image src="/assets/text/14.jpg" /> -->
+ <!-- <image src="https://www.bilibili.com/" /> -->
+
+ <!-- 补充：相册中的图片 -->
+ <button size="mini" bindtap="handleChooseAlbum">选中图片</button>
+ <image src="{{imagePath}}" />
+
+<view>--------------------------------</view>
+<!-- <image 
+  wx:for="{{1}}"
+  src="http://img02.tooopen.com/images/20160509/tooopen_sy_161967094653.jpg"
+  bindload="handImageLoad"
+  lazy-load/> -->
+  <!-- 4、show-menu-by-longpress：长安识别小程序码 -->
+  <image
+        show-menu-by-longpress
+         src="../../assets/text/14.jpg"
+          />
