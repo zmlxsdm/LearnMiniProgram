@@ -1,0 +1,3 @@
+<!--pages/mess/mess.wxml-->
+<!-- <text>pages/mess/mess.wxml</text> -->
+<text>{{newDate}}</text>
