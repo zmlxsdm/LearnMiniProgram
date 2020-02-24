@@ -1,0 +1,10 @@
+<!--pages/template/template.wxml-->
+<!-- <text>pages/template/template.wxml</text> -->
+<template name="contentItem">
+<button size="mini">{{btnText}}</button>
+<text>\n</text>
+<text>{{conter}}</text>
+</template>
+
+
+<template is="contentItem" data="{{btnText:'按钮',conter:'conter'}}" />

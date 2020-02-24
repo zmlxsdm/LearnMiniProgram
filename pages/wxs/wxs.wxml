@@ -1,0 +1,6 @@
+<!--pages/wxs/wxs.wxml-->
+<!-- <text>pages/wxs/wxs.wxml</text> -->
+<!-- <wxs src="../../wxs/info.wxs" module="info" /> -->
+<wxs src="../../wxs/price.wxs" module="format" />
+<view>{{format.priceFormat(message)}}</view>
+
