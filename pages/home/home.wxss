@@ -1,5 +1,29 @@
 /* pages/home/home.wxss */
-.title{
+/* .title{
 color: red;
 font-size: 30px
+} */
+.view1{
+  width: 240rpx;
+  height: 240rpx;
+  background: red;
 }
+.view2{
+  width:200rpx;
+  height: 200rpx;
+  background: olivedrab;
+}
+.view3{
+  width: 160rpx;
+  height: 160rpx;
+  background: orange;
+  }
+  .red{
+    color: red;
+  }
+  .green{
+    color: green;
+  }
+  .blue{
+    color: blue;
+  }
