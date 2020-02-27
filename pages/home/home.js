@@ -7,60 +7,47 @@ Page({
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleShowToast(){
+    wx.showToast({
+      title: '点击成功',
+      duration:500,
+      icon:""
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleShowModel(){
+    wx.showModal({
+      title: '我是标题',
+      content: '我是内容',
+      // showCancel:false,//将取消按钮取消
+      // cancelText:'退出',//将取消按钮改成退出
+      success:function(res){
+        console.log(res)
+      }
+    })
   },
+  handleShowLoading(){
+    wx.showLoading({
+      title: '加载',
+      mask:true//添加蒙版
+    })
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+    setTimeout(()=>{
+      wx.hideLoading()
+    },2000)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handleShowAction(){
+    wx.showActionSheet({
+      itemList: ['123123123','12ggg'],
+      success:function(res){
+        console.log(res)
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onShareAppMessage:function(option){
+    return {
+      title:'你好张三',
+      path:'/pages/about/about',
+      imageUrl:''
+    }
   }
 })
