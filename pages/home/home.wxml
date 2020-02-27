@@ -1,3 +1,21 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello world</text>
-<button size='mini'>按钮</button>
+<w-tab-control titles="{{['流行','新款','精选']}}"
+               bind:itemclick="handleTabClick"
+ />
+
+<view>--------------------------------------</view>
+<!-- //插槽的使用 -->
+<my-slot>
+<button>按钮</button>
+</my-slot>
+<view>--------------------------------------</view>
+<my-slot>
+<text>hahah</text>
+</my-slot>
+<view>--------------------------------------</view>
+<my-mslot>
+  <button slot="slot2">按钮</button>
+  <!-- <button>按钮</button> -->
+</my-mslot>
+ 
+
