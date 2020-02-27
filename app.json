@@ -2,6 +2,6 @@
   "pages": [
     "pages/home/home",
     "pages/about/about"
-    
-  ]
+  ],
+  "sitemapLocation": "sitemap3.json"
 }
